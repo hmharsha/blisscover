@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   controller :user do
-    post 'profile', action: :profile
+    post 'edit-profile', action: :edit_profile
+    post 'display-profile', action: :display_profile
+  end
+
+  controller :event do
+    post 'list', action: :list
   end
 end
